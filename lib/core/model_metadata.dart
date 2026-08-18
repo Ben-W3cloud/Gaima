@@ -6,23 +6,24 @@
 class ModelMetadata {
   const ModelMetadata._();
 
-  static const String modelFileName = 'gemma-2b-instruct-q4_k_m.gguf';
+  static const String modelFileName = 'gemma-4-E2B_q4_0-it.gguf';
 
   /// Cloudflare R2 signed/credentialed download endpoint
   /// (replace with the real bucket URL and checksum before shipping).
   static const String downloadUrl =
-      'https://pub-c4e2d2b4a58d4f1a8a6f5a1f3d2c1b0e.r2.dev/gemma-2b-instruct-q4_k_m.gguf';
+      'https://pub-c4e2d2b4a58d4f1a8a6f5a1f3d2c1b0e.r2.dev/gemma-4-E2B_q4_0-it.gguf';
 
-  /// Full expected size in bytes (approx 1.5GB). Used for progress math when
+  /// Full expected size in bytes (approx 3.1GB). Used for progress math when
   /// the remote does not advertise Content-Length.
-  static const int expectedSizeBytes = 1520000000;
+  static const int expectedSizeBytes = 3349516256;
 
   /// SHA-256 of the expected model artifact. Populate from `certutil -hashfile`
   /// output of the generated GGUF. The download is discarded on mismatch.
-  static const String sha256 = 'D4E5F0A1B2C3D4E5F0A1B2C3D4E5F0A1B2C3D4E5F0A1B2C3D4E5F0A1B2C3D4';
+  static const String sha256 =
+      ' FA401B55B07EE70A54C6DAE3903C783A6E65064312529EA57175CB5F8DEC6634';
 
   /// Rolling context ceiling — the OOM guard truncates prompts to this.
-  static const int contextTokens = 2048;
+  static const int contextTokens = 2000;
 
   /// Single hardcoded system prompt applied to every session (v1 scope).
   static const String systemPrompt = SystemPromptCore.system;
