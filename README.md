@@ -1,4 +1,4 @@
-# Offline Gemma Chat
+# Gaima
 
 Privacy-first, fully on-device AI chatbot for Android — no servers, no accounts, no analytics. Chat with a local LLM entirely offline after a one-time model download.
 
@@ -11,7 +11,7 @@ Privacy-first, fully on-device AI chatbot for Android — no servers, no account
 
 ## Overview
 
-Offline Gemma Chat is a ChatGPT-style mobile chatbot that runs **100% on-device**. After downloading a quantized Gemma-2B model on first launch (~1.5GB, one time, Wi-Fi recommended), the app works entirely without an internet connection — no API calls, no data leaving the phone, no telemetry.
+Gaima is a ChatGPT-style mobile chatbot that runs **100% on-device**. After downloading a quantized Gemma-2B model on first launch (~1.5GB, one time, Wi-Fi recommended), the app works entirely without an internet connection — no API calls, no data leaving the phone, no telemetry.
 
 Built to demonstrate on-device LLM inference on mobile, Flutter isolate architecture, and offline-first app design.
 
